@@ -20,6 +20,7 @@ export default function Header({}) {
                 className="w-auto h-14 hover:shadow"
                 src="/assets/logo.svg"
                 alt="Aubrey Kazdan's Logo"
+                aria-label="Link to homepage"
               />
             </Link>
           </div>
@@ -70,6 +71,7 @@ export default function Header({}) {
                       className="h-14 w-auto hover:shadow"
                       src="/assets/logo.svg"
                       alt="Aubrey Kazdan's Logo"
+                      aria-label="Link to homepage"
                     />
                   </Link>
                   <div className="-mr-2">
