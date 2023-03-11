@@ -3,10 +3,7 @@ import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Container from "../container";
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+import Image from "next/image";
 
 export default function Header({}) {
   return (
@@ -15,17 +12,19 @@ export default function Header({}) {
         <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
           <div>
             <span className="sr-only">Aubrey Kazdan's Logo</span>
-            <Link href="/">
-              <img
-                className="w-auto h-14 hover:shadow"
-                src="/assets/logo.svg"
-                alt="Aubrey Kazdan's Logo"
-                aria-label="Link to homepage"
-              />
+            <Link href="/" passHref aria-label="Go to home page">
+              <div className="hover:shadow-xl transition-animate">
+                <Image
+                  src="/assets/logo.svg"
+                  alt="Aubrey Kazdan's logo"
+                  width={80}
+                  height={80}
+                />
+              </div>
             </Link>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-accent focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent">
+            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 hover:bg-accent hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent transition-animate">
               <span className="sr-only">Open menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
@@ -67,19 +66,21 @@ export default function Header({}) {
             focus
             className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden"
           >
-            <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+            <div className="rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
               <div className="px-5 pt-5 pb-6">
                 <div className="flex items-center justify-between">
-                  <Link href="/">
-                    <img
-                      className="h-14 w-auto hover:shadow"
-                      src="/assets/logo.svg"
-                      alt="Aubrey Kazdan's Logo"
-                      aria-label="Link to homepage"
-                    />
+                  <Link href="/" passHref aria-label="Go to home page">
+                    <div className="hover:shadow-xl transition-animate">
+                      <Image
+                        src="/assets/logo.svg"
+                        alt="Aubrey Kazdan's logo"
+                        width={60}
+                        height={60}
+                      />
+                    </div>
                   </Link>
                   <div className="-mr-2">
-                    <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-accent focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent">
+                    <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 hover:bg-accent hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent transition-animate">
                       <span className="sr-only">Close menu</span>
                       <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
@@ -88,13 +89,13 @@ export default function Header({}) {
               </div>
               <div className="py-6 px-5">
                 <div className="grid gap-4">
-                  <Link href="/about" className="nav-item">
+                  <Link href="/about" className="nav-item nav-animated">
                     About
                   </Link>
-                  <Link href="/projects" className="nav-item">
+                  <Link href="/projects" className="nav-item nav-animated">
                     Projects
                   </Link>
-                  <Link href="/blog" className="nav-item">
+                  <Link href="/blog" className="nav-item nav-animated">
                     Blog
                   </Link>
                 </div>
