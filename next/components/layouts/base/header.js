@@ -32,18 +32,22 @@ export default function Header({}) {
           </div>
           <div className="hidden md:flex md:flex-1 md:items-center md:justify-between">
             <Popover.Group as="nav" className="flex space-x-10">
-              <Link href="/about" className="nav-item">
+              <Link href="/about" className="nav-item nav-animated">
                 About
               </Link>
-              <Link href="/projects" className="nav-item">
+              <Link href="/projects" className="nav-item nav-animated">
                 Projects
               </Link>
-              <Link href="/blog" className="nav-item">
+              <Link href="/blog" className="nav-item nav-animated">
                 Blog
               </Link>
             </Popover.Group>
             <div className="flex items-center md:ml-12">
-              <a href="mailto:aubrey.j.kazdan@gmail.com" className="btn btn-lg">
+              <a
+                href="mailto:aubrey.j.kazdan@gmail.com"
+                aria-label="Send an email to Aubrey"
+                className="btn btn-accent"
+              >
                 Contact
               </a>
             </div>
@@ -97,7 +101,8 @@ export default function Header({}) {
                 <div className="mt-6">
                   <a
                     href="mailto:aubrey.j.kazdan@gmail.com"
-                    className="btn btn-lg"
+                    aria-label="Send an email to Aubrey"
+                    className="btn btn-accent"
                   >
                     Contact
                   </a>

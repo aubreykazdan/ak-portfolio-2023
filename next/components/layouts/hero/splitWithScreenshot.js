@@ -9,7 +9,7 @@ export default function SplitWithScreenshot() {
           data-aos-duration="3000"
           className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-60 lg:text-left"
         >
-          <div className="px-4 sm:px-8 lg:w-1/2 xl:pr-16">
+          <div className="px-4 sm:px-6 lg:px-8 lg:w-1/2 xl:pr-16">
             <h1 className="">
               <span className="block xl:inline">Hi. My name is</span>{" "}
               <span className="block text-accent xl:inline">Aubrey Kazdan</span>
@@ -30,6 +30,9 @@ export default function SplitWithScreenshot() {
           <div className="absolute inset-0 h-full w-full">
             <Image
               fill
+              sizes="(min-width: 640px) 100vw,
+              (min-width: 768px) 50vw,
+              100vw"
               style={{ objectFit: "cover" }}
               src="/images/nin-fan-day.jpg"
               alt="Aubrey standing in front of a band logo"
