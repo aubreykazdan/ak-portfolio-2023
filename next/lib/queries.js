@@ -1,14 +1,30 @@
 export const allPostsQuery = `
 *[_type == "post"]{
   ...,
-  categories[]->
+  categories[]->,
+  mainImage{
+    ...,
+    asset->
+  },
+  mainImageTwo{
+    ...,
+    asset->
+  },
 }
 `;
 
 export const featuredPostQuery = `
 *[_type == "post" && featured == true][0]{
   ...,
-  categories[]->
+  categories[]->,
+  mainImage{
+    ...,
+    asset->
+  },
+  mainImageTwo{
+    ...,
+    asset->
+  },
 }
 `;
 
@@ -16,5 +32,13 @@ export const postSlugQuery = `
 *[_type == "post" && slug.current == $slug][0]{
   ...,
   categories[]->,
+  mainImage{
+    ...,
+    asset->
+  },
+  mainImageTwo{
+    ...,
+    asset->
+  },
 }
 `;
