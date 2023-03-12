@@ -2,7 +2,7 @@ import Container from "../container";
 
 export default function Footer({}) {
   return (
-    <div className="border-t mt-8 md:mt-16 lg:mt-20">
+    <div className="border-t mt-8 md:mt-16">
       <Container>
         <div className="flex items-center justify-between mb-4 py-4">
           <div className="flex space-x-4">
@@ -17,6 +17,7 @@ export default function Footer({}) {
                 className="w-auto h-6"
                 src="/svg/instagram.svg"
                 alt="Instagram Logo"
+                loading="lazy"
               />
             </a>
             <a
@@ -30,11 +31,12 @@ export default function Footer({}) {
                 className="w-auto h-6"
                 src="/svg/github.svg"
                 alt="GitHub Logo"
+                loading="lazy"
               />
             </a>
           </div>
           <div>
-            <p className="pt-4">© {new Date().getFullYear()} Aubrey Kazdan</p>
+            <p className="mt-4">© {new Date().getFullYear()} Aubrey Kazdan</p>
           </div>
         </div>
       </Container>
