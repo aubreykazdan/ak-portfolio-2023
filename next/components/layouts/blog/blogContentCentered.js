@@ -1,6 +1,7 @@
 import BlogContent from "@/components/sanity/blogContent";
 import Container from "../container";
 import { urlForImage } from "/lib/sanity";
+import Image from "next/image";
 
 export default function BlogContentCentered({ data }) {
   const options = {
@@ -22,10 +23,9 @@ export default function BlogContentCentered({ data }) {
   return (
     <div className="relative overflow-hidden">
       <Container>
-        <div className="mx-auto max-w-prose text-lg">
-          <figure>
-            <img
-              className="w-full rounded-lg"
+        <div className="mx-auto max-w-4xl">
+          <figure data-aos="fade-left" data-aos-duration="3000">
+            <Image
               src={urlForImage(mainImage.asset).url()}
               alt={mainImage.imageAlt}
               width={1310}
@@ -46,11 +46,7 @@ export default function BlogContentCentered({ data }) {
               })}
             </div>
           </div>
-          <h1>
-            <span className="block text-center text-3xl font-bold leading-8 tracking-tight  sm:text-4xl mt-4">
-              {title}
-            </span>
-          </h1>
+          <h1 className="mt-4">{title}</h1>
           <div className="flex justify-center">
             <time dateTime={publishedAt}>
               Published{" "}
@@ -61,12 +57,11 @@ export default function BlogContentCentered({ data }) {
             <BlogContent content={description} />
           </div>
         </div>
-        <div className="prose prose-lg mx-auto mt-6">
+        <div className="mx-auto max-w-4xl content-section mt-6">
           <BlogContent content={body} />
           {mainImageTwo && (
-            <figure>
-              <img
-                className="w-full rounded-lg"
+            <figure data-aos="fade-right" data-aos-duration="3000">
+              <Image
                 src={urlForImage(mainImageTwo.asset).url()}
                 alt={mainImageTwo.imageAlt}
                 width={1310}
@@ -77,7 +72,11 @@ export default function BlogContentCentered({ data }) {
               </figcaption>
             </figure>
           )}
-          {bodyTwo && <BlogContent content={bodyTwo} />}
+          {bodyTwo && (
+            <div className="mt-4">
+              <BlogContent content={bodyTwo} />
+            </div>
+          )}
         </div>
       </Container>
     </div>

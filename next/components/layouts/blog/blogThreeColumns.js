@@ -2,6 +2,7 @@ import BlogContent from "@/components/sanity/blogContent";
 import Link from "next/link";
 import Container from "../container";
 import { urlForImage } from "/lib/sanity";
+import Image from "next/image";
 
 export default function BlogThreeColumns({ data }) {
   const options = {
@@ -27,10 +28,11 @@ export default function BlogThreeColumns({ data }) {
                 <Link href={`blog/${slug}`} key={title}>
                   <div className="flex flex-col overflow-hidden transition-animate hover:bg-accent-light bg-white shadow-lg min-h-full">
                     <div className="flex-shrink-0">
-                      <img
-                        className="h-48 w-full object-cover"
+                      <Image
                         src={urlForImage(mainImage.asset).url()}
                         alt={mainImage.imageAlt}
+                        height={200}
+                        width={500}
                       />
                     </div>
                     <div className="flex flex-1 flex-col justify-between p-6">
