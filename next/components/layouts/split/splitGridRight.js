@@ -11,7 +11,7 @@ export default function SplitGridRight() {
           <p className="mt-3 max-w-3xl">
             Listed here are some of the programming languages I am fluent in.
           </p>
-          <div className="mt-6 sm:flex space-x-4">
+          <div className="mt-6 sm:flex">
             <a
               href="https://github.com/aubreykazdan"
               target="_blank"
