@@ -29,17 +29,16 @@ export default function BlogMainPreview({ data, showHeading }) {
           ) : null}
           <div className="relative max-w-md sm:max-w-3xl">
             <div className="relative aspect-[3/2] py-28 lg:py-64">
-              {/* <img
-                className="absolute inset-0 h-full w-full object-cover"
-                src={urlForImage(mainImage.asset).url()}
-                alt={mainImage.imageAlt}
-              /> */}
-              <Image
-                src={urlForImage(mainImage.asset).url()}
-                alt={mainImage.imageAlt}
-                width={2000}
-                height={1000}
-              />
+              <div className="absolute inset-0 h-full w-full">
+                <Image
+                  src={urlForImage(mainImage.asset).url()}
+                  alt={mainImage.imageAlt}
+                  fill
+                  sizes="(min-width: 768px) 100vw,
+                  100vw"
+                  className="object-cover"
+                />
+              </div>
             </div>
 
             <div className=" h-full w-full lg:absolute lg:inset-y-0 lg:-right-[41%] xl:-right-[70%]">

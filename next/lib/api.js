@@ -20,8 +20,14 @@ const postFields = `
   description,
   featured,
   imagesArray,
-  mainImage,
-  mainImageTwo,
+  mainImage{
+    ...,
+    asset->
+  },
+  mainImageTwo{
+    ...,
+    asset->
+  },
   publishedAt,
   'slug': slug.current,
   title,
