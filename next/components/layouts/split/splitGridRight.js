@@ -6,7 +6,7 @@ export default function SplitGridRight() {
   return (
     <Container>
       <div className="lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
-        <div>
+        <div data-aos="fade-right" data-aos-duration="3000">
           <h2>Highlighted Programming Languages</h2>
           <p className="mt-3 max-w-3xl">
             Listed here are some of the programming languages I am fluent in.
@@ -31,7 +31,11 @@ export default function SplitGridRight() {
             </Link>
           </div>
         </div>
-        <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2"
+        >
           <div className="col-span-1 flex flex-col items-center bg-gray-100 p-8">
             <img
               className="h-12"

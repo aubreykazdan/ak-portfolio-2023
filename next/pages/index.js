@@ -13,7 +13,9 @@ export default function Home({ blogPost, preview }) {
         <div className="pb-8 sm:pb-16">
           <SplitWithScreenshot />
         </div>
-        <div className="py-8 sm:py-16">
+        <div
+          className="py-8 sm:py-16"
+        >
           <BlogMainPreview showHeading data={blogPost[0]} />
         </div>
         <div className="sm:py-8 py-16">

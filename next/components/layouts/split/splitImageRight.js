@@ -1,11 +1,15 @@
 import { CameraIcon } from "@heroicons/react/20/solid";
 import Container from "../container";
+import Image from "next/image";
 
 export default function SplitImageRight({}) {
   return (
-    <div className="overflow-hidden">
+    <div
+      data-aos="fade-down"
+      data-aos-duration="3000"
+      className="overflow-hidden"
+    >
       <Container>
-        <div className="absolute top-0 bottom-0 left-3/4 hidden w-screen bg-gray-50 lg:block" />
         <div className="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
           <div>
             <h2>Hi Again</h2>
@@ -16,7 +20,7 @@ export default function SplitImageRight({}) {
             <div className="relative mx-auto max-w-prose text-base lg:max-w-none">
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                  <img
+                  <Image
                     className="rounded-lg object-cover object-center shadow-lg"
                     src="/images/portrait.jpg"
                     alt="Portrait of Aubrey against a brick backdrop"
@@ -24,9 +28,9 @@ export default function SplitImageRight({}) {
                     height={1376}
                   />
                 </div>
-                <figcaption className="mt-3 flex text-sm text-gray-500">
+                <figcaption className="mt-3 flex text-base">
                   <CameraIcon
-                    className="h-5 w-5 flex-none text-gray-400"
+                    className="h-6 w-6 flex-none"
                     aria-hidden="true"
                   />
                   <span className="ml-2">
@@ -36,6 +40,7 @@ export default function SplitImageRight({}) {
                       className="text-accent-blue hover:text-accent-hover underline"
                       target="_blank"
                       rel="noreferrer"
+                      aria-label="Link to Alex's instagram page"
                     >
                       Alex
                     </a>
@@ -44,16 +49,16 @@ export default function SplitImageRight({}) {
               </figure>
             </div>
           </div>
-          <div className="mt-8 lg:mt-0">
-            <div className="mx-auto max-w-prose text-base lg:max-w-none">
-              <p className="text-lg text-gray-500">
+          <div className="mt-8 lg:mt-0 content-section">
+            <div className="mx-auto lg:max-w-none">
+              <p>
                 My name is Aubrey. With over a decade of service industry
                 experience under my belt, I have set my sights on using my
                 programming skills to help and support people + business in my
                 community.
               </p>
             </div>
-            <div className="prose prose-indigo mx-auto mt-5 text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
+            <div className="mx-auto mt-5 lg:col-start-1 lg:row-start-1 lg:max-w-none">
               <p>
                 Aside from programming, I have a distinct passion for everything
                 music. In my spare time, I collect and listen to vinyl. Having
@@ -82,13 +87,7 @@ export default function SplitImageRight({}) {
               <p>
                 If you are hiring, or simply want to collaborate on a project of
                 any kind, I am reachable via{" "}
-                <a
-                  href="mailto:aubrey.j.kazdan@gmail.com"
-                  className="hover:text-accent-hover"
-                >
-                  email
-                </a>
-                . Thank you.
+                <a href="mailto:aubrey.j.kazdan@gmail.com">email</a>. Thank you.
               </p>
             </div>
           </div>

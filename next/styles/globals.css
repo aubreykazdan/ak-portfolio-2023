@@ -90,8 +90,9 @@ h3 {
 }
 
 .content-section a:not(.btn) {
-  @apply mb-4 underline text-accent !important;
+  @apply mb-4 underline text-accent-blue !important;
 }
+
 .content-section ul:not(.unstyled) {
   @apply mb-6 space-y-4;
 }
