@@ -25,7 +25,7 @@ h3 {
 }
 
 .category {
-  @apply rounded-full bg-gray-300 px-3 py-1 w-fit;
+  @apply rounded-full bg-gray-300 text-base px-3 py-1 w-fit;
 }
 
 .logo {
