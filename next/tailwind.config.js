@@ -12,11 +12,9 @@ module.exports = {
     extend: {
       colors: {
         accent: {
-          darkest: "#3e2d23",
-          dark: "#6d3a11",
+          dark: "#45050c",
           DEFAULT: "#b50102",
-          hover: "#ec7615",
-          light: "#e0b767",
+          light: "#d5ac4e",
           blue: "#2f088d",
         },
       },

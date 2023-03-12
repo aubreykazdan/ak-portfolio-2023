@@ -13,11 +13,11 @@ body {
 }
 
 h1 {
-  @apply text-4xl tracking-normal leading-normal font-bold  sm:text-5xl md:text-6xl;
+  @apply tracking-normal leading-normal font-bold  text-5xl md:text-6xl;
 }
 
 h2 {
-  @apply text-3xl md:text-4xl font-bold tracking-tight;
+  @apply text-4xl md:text-5xl font-semibold tracking-tight;
 }
 
 h3 {
@@ -25,7 +25,7 @@ h3 {
 }
 
 .category {
-  @apply rounded-full bg-gray-300 px-2 py-1 max-w-fit;
+  @apply rounded-full bg-gray-300 px-3 py-1 w-fit;
 }
 
 .logo {
@@ -61,6 +61,10 @@ h3 {
   @apply text-white bg-black hover:bg-accent;
 }
 
+.btn-accent-light {
+  @apply bg-accent-light hover:bg-accent hover:text-white;
+}
+
 /* #CONTENT SECTION - */
 .content-section div {
   @apply mb-10;
@@ -81,7 +85,7 @@ h3 {
 }
 
 .content-section a:not(.btn) {
-  @apply mb-4 underline text-accent hover:text-accent-hover !important;
+  @apply mb-4 underline text-accent !important;
 }
 .content-section ul:not(.unstyled) {
   @apply mb-6 space-y-4;

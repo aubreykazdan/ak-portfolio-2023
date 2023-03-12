@@ -10,16 +10,16 @@ export default function Home({ blogPost, preview }) {
   return (
     <Layout page="Home">
       <main>
-        <div className="pb-8 sm:pb-16 lg:pb-20">
+        <div className="pb-8 sm:pb-16">
           <SplitWithScreenshot />
         </div>
-        <div className="py-8 sm:py-16 lg:py-20">
+        <div className="py-8 sm:py-16">
           <BlogMainPreview showHeading data={blogPost[0]} />
         </div>
-        <div className="mt-16 lg:mt-0 sm:py-8 py-16 lg:py-20">
+        <div className="sm:py-8 py-16">
           <SplitGridRight />
         </div>
-        <div className="py-16 lg:py-20">
+        <div className="py-8 lg:py-20">
           <BannerImageOverlap />
         </div>
       </main>

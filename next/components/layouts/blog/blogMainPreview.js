@@ -17,42 +17,58 @@ export default function BlogMainPreview({ data, showHeading }) {
           {showHeading === true ? (
             <div className="mb-8">
               <h2>Featured Blog Post</h2>
-              <Link href="/blog" className="btn btn-lg mt-4">
+              <Link
+                href="/blog"
+                aria-label="Go to blog page"
+                className="btn btn-accent-light mt-4"
+              >
                 View All Posts
               </Link>
             </div>
           ) : null}
           <div className="relative max-w-md sm:max-w-3xl">
-            <div className="relative overflow-hidden py-64 rounded-lg">
+            <div className="relative aspect-[3/2] py-28 lg:py-64">
               <img
                 className="absolute inset-0 h-full w-full object-cover"
                 src={urlForImage(mainImage.asset).url()}
                 alt={mainImage.imageAlt}
               />
             </div>
-            <Link href={`blog/${slug}`}>
-              <div className="p-6 w-full lg:w-2/3 absolute -bottom-20 right-0 lg:bottom-[20%] lg:-right-[45%] bg-white hover:bg-gray-100 transition ease-in-out shadow-lg  group rounded-b-lg lg:rounded-lg">
-                <div className="space-y-2">
-                  <time className=" text-sm">
-                    {new Date(publishedAt).toLocaleDateString("en-us", options)}
-                  </time>
-                  <div className="category">
-                    {categories.map((item) => {
-                      return (
-                        <span className="text-sm" key={item._id}>
-                          {item.title}
-                        </span>
-                      );
-                    })}
+
+            <div className=" h-full w-full lg:absolute lg:inset-y-0 lg:-right-[41%] xl:-right-[70%]">
+              <div className="h-full flex-col items-center justify-center lg:flex">
+                <div className="lg:max-w-xl bg-white shadow-lg p-8">
+                  <div className="text-base">
+                    <time className="">
+                      {new Date(publishedAt).toLocaleDateString(
+                        "en-us",
+                        options
+                      )}
+                    </time>
+                    <div className="category mt-2">
+                      {categories.map((item) => {
+                        return (
+                          <span className="" key={item._id}>
+                            {item.title}
+                          </span>
+                        );
+                      })}
+                    </div>
                   </div>
-                  <h3 className="text-xl">{title}</h3>
-                  <BlogContent content={description} />
+                  <h3 className="mt-2">{title}</h3>
+                  <div className="mt-2">
+                    <BlogContent content={description} />
+                  </div>
                 </div>
               </div>
-            </Link>
+            </div>
           </div>
         </div>
       </Container>
     </div>
   );
+}
+
+{
+  /* <Link href={`blog/${slug}`}></Link> */
 }
