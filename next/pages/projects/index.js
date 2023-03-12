@@ -6,7 +6,7 @@ const features = [
   {
     name: "On Task",
     description:
-      "Site dedicated to a new community space located on Toronto's west-end.",
+      "Website for a new non-profit community space located in Toronto’s west-end.",
     skills: "Next.js | Tailwindcss | Headless CMS (Sanity.io)",
     imageSrc: "/images/projects/on-task.jpg",
     imageAlt: "Landing page for On Task website.",
@@ -16,12 +16,22 @@ const features = [
   {
     name: "Podcast Prioritzer",
     description:
-      "This application suggests podcasts based on commute times and user search queries.",
+      "An application that suggests podcasts based on commute times and user search queries.",
     skills: "React | RESTful API | CSS3 | Paired Programming",
     imageSrc: "/images/projects/podcast-prioritizer.jpg",
     imageAlt: "Double stitched black canvas hook loop.",
     github: "https://github.com/capibara33/podcastPrioritizer",
     live: "https://podcast-prioritizer.netlify.app/",
+  },
+  {
+    name: "Movies A to Z",
+    description:
+      "A game to challenge users to find movies with high IMDB user-rating scores and compare them to a hand-picked array of movies selected by myself + Zach Bines.",
+    skills: "HTML5 | RESTful API | CSS3 | Paired Programming",
+    imageSrc: "/images/projects/movies-a-to-z.jpg",
+    imageAlt: "Double stitched black canvas hook loop.",
+    github: "https://github.com/ZAP-2/Movies-A-to-Z",
+    live: "https://zap-2.github.io/Movies-A-to-Z/",
   },
 ];
 
