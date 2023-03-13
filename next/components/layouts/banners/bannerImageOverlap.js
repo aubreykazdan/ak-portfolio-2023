@@ -23,7 +23,7 @@ export default function BannerImageOverlap({}) {
                   100vw"
                 src="/images/portrait-two.jpg"
                 alt="Aubrey with mom"
-                className="object-cover"
+                className="object-cover relative"
               />
             </div>
           </div>
