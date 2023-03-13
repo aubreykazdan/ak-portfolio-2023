@@ -16,10 +16,10 @@ export default function Blog({ allPosts, preview }) {
     <Layout page="Blog">
       <main>
         <SimpleBanner title="Blog" />
-        <div className="py-8 sm:py-16 lg:py-20">
+        <div className="py-8 sm:py-16">
           <BlogMainPreview data={featuredBlogPost[0]} />
         </div>
-        <div className="mt-24 lg:mt-0">
+        <div className="mt-8 lg:mt-0">
           <BlogThreeColumns data={allBlogPosts} />
         </div>
       </main>

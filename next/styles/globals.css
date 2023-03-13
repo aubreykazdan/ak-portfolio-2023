@@ -13,15 +13,15 @@ body {
 }
 
 h1 {
-  @apply tracking-normal leading-normal font-bold  text-5xl md:text-6xl;
+  @apply tracking-normal leading-tight sm:leading-normal font-bold text-5xl sm:text-5xl md:text-6xl;
 }
 
 h2 {
-  @apply text-4xl md:text-5xl font-semibold tracking-tight;
+  @apply text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight;
 }
 
 h3 {
-  @apply text-2xl md:text-3xl font-semibold tracking-tight;
+  @apply text-2xl sm:text-3xl font-semibold tracking-tight;
 }
 
 h4 {

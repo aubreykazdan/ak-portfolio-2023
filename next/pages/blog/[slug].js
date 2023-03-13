@@ -20,11 +20,11 @@ export default function BlogSlug({ post, preview }) {
   ) : (
     <Layout page={`Blog | ${title}`}>
       <main>
-        <div className="py-8 sm:py-16 lg:py-20">
+        <div className="py-8 sm:py-16">
           <BlogContentCentered data={blogPost} />
         </div>
         {imagesArray && (
-          <div>
+          <div className="pb-8 sm:pb-16">
             <GridThreeColumnLargeImages data={imagesArray} />
           </div>
         )}

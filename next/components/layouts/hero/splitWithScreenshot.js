@@ -11,14 +11,14 @@ export default function SplitWithScreenshot() {
         >
           <div className="px-4 sm:px-6 lg:px-8 lg:w-1/2 xl:pr-16">
             <h1 className="">
-              <span className="block xl:inline">Hi. My name is</span>{" "}
+              Hi. My name is {""}
               <span className="block text-accent xl:inline">Aubrey Kazdan</span>
             </h1>
             <p className="mx-auto max-w-md mt-5 md:max-w-3xl">
               I am a Web Developer who specializes in learning all kinds of
               frameworks to make the best sites and apps I can make. I love to
               collect vinyl, make memories at live shows and connect with
-              like-minded people.
+              like-minded creative people.
             </p>
           </div>
         </div>

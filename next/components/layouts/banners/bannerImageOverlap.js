@@ -32,11 +32,11 @@ export default function BannerImageOverlap({}) {
           <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
             <blockquote>
               <div>
-                <p className="mt-12 text-2xl">
+                <p className="mt-12 text-xl sm:text-2xl">
                   Documenting some of my hobbies & passions is how I keep my
                   creative spirit alive. Check them out with the links below.
                   <span className="block text-accent-light font-semibold">
-                    Get to know me a little bit.
+                    Get to know me.
                   </span>
                 </p>
               </div>
