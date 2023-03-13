@@ -24,7 +24,7 @@ export default function BlogContentCentered({ data }) {
     <div className="relative overflow-hidden">
       <Container>
         <div className="mx-auto max-w-4xl">
-          <figure data-aos="fade-left" data-aos-duration="3000">
+          <figure data-aos="fade-down" data-aos-duration="3000">
             <Image
               src={urlForImage(mainImage.asset).url()}
               alt={mainImage.imageAlt}
@@ -61,7 +61,7 @@ export default function BlogContentCentered({ data }) {
         <div className="mx-auto max-w-4xl content-section mt-6">
           <BlogContent content={body} />
           {mainImageTwo && (
-            <figure data-aos="fade-right" data-aos-duration="3000">
+            <figure data-aos="fade-down" data-aos-duration="3000">
               <Image
                 src={urlForImage(mainImageTwo.asset).url()}
                 alt={mainImageTwo.imageAlt}

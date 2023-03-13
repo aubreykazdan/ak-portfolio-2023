@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function BannerImageOverlap({}) {
   return (
     <div
-      data-aos="fade-up"
+      data-aos="fade-down"
       data-aos-duration="3000"
       className="bg-gray-100 pb-16 lg:relative lg:z-10 lg:pb-0"
     >

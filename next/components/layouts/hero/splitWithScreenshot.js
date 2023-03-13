@@ -2,13 +2,9 @@ import Image from "next/image";
 
 export default function SplitWithScreenshot() {
   return (
-    <div className="relative">
+    <div data-aos="fade-down" data-aos-duration="3000" className="relative">
       <main className="lg:relative">
-        <div
-          data-aos="fade-right"
-          data-aos-duration="3000"
-          className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-60 lg:text-left"
-        >
+        <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-60 lg:text-left">
           <div className="px-4 sm:px-6 lg:px-8 lg:w-1/2 xl:pr-16">
             <h1 className="">
               Hi. My name is {""}
@@ -22,11 +18,7 @@ export default function SplitWithScreenshot() {
             </p>
           </div>
         </div>
-        <div
-          data-aos="fade-left"
-          data-aos-duration="3000"
-          className="relative h-64 w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2"
-        >
+        <div className="relative h-64 w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2">
           <div className="absolute inset-0 h-full w-full">
             <Image
               fill
