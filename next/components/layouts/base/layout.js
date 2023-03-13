@@ -17,7 +17,7 @@ export default function Layout({ children, page }) {
         <meta property="og:image" content="/images/portait.jpg" key="ogimage" />
         <title>Aubrey Kazdan | {page}</title>
       </Head>
-      <div className="min-h-screen">
+      <div className="">
         <Header />
         <main className="flex-1 mx-auto">{children}</main>
         <Footer />

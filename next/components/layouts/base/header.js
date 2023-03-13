@@ -13,7 +13,7 @@ export default function Header({}) {
           <div>
             <span className="sr-only">Aubrey Kazdan's Logo</span>
             <Link href="/" passHref aria-label="Go to home page">
-              <div className="hover:shadow-xl transition-animate">
+              <div className="hover:shadow-xl hover:shadow-accent transition-animate">
                 <Image
                   src="/assets/logo.svg"
                   alt="Aubrey Kazdan's logo"
