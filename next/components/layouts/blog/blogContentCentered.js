@@ -28,8 +28,9 @@ export default function BlogContentCentered({ data }) {
             <Image
               src={urlForImage(mainImage.asset).url()}
               alt={mainImage.imageAlt}
-              width={1310}
-              height={873}
+              width={mainImage.asset.metadata.dimensions.width}
+              height={mainImage.asset.metadata.dimensions.height}
+              className="aspect-[3/2] object-cover"
             />
             <figcaption className="mt-2 text-gray-500 italic">
               {mainImage.caption}
@@ -47,7 +48,7 @@ export default function BlogContentCentered({ data }) {
             </div>
           </div>
           <h1 className="mt-4">{title}</h1>
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-2">
             <time dateTime={publishedAt}>
               Published{" "}
               {new Date(publishedAt).toLocaleDateString("en-us", options)}

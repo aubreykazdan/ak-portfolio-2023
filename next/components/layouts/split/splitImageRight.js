@@ -19,9 +19,9 @@ export default function SplitImageRight({}) {
           <div className="relative lg:col-start-2 lg:row-start-1">
             <div className="relative mx-auto max-w-prose text-base lg:max-w-none">
               <figure>
-                <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
+                <div className="aspect-[12/7] lg:aspect-none">
                   <Image
-                    className="rounded-lg object-cover object-center shadow-lg"
+                    className="object-cover object-center shadow-lg"
                     src="/images/portrait.jpg"
                     alt="Portrait of Aubrey against a brick backdrop"
                     width={1184}
