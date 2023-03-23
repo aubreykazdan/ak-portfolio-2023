@@ -40,7 +40,7 @@ export default function BlogMainPreview({ data, showHeading }) {
             </div>
           </div>
 
-          <div className=" h-full w-full lg:absolute lg:inset-y-0 lg:-right-[41%] xl:-right-[70%]">
+          <div className=" h-full w-fit lg:absolute lg:inset-y-0 lg:-right-[41%] xl:-right-[60%]">
             <div className="h-full flex-col items-center justify-center lg:flex">
               <Link href={`blog/${slug}`}>
                 <div className="lg:max-w-xl transition-animate hover:bg-accent-light bg-white shadow-lg p-8">
