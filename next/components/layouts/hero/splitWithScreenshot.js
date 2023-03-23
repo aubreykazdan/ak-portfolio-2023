@@ -18,15 +18,15 @@ export default function SplitWithScreenshot() {
             </p>
           </div>
         </div>
-        <div className="relative h-64 w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2">
+        <div className="relative h-96 w-full lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2">
           <div className="absolute inset-0 h-full w-full">
             <Image
               fill
               sizes="(min-width: 640px) 100vw,
-              (min-width: 768px) 50vw,
+              (min-width: 768px) 100vw,
               100vw"
-              style={{ objectFit: "cover" }}
-              src="/images/nin-fan-day.jpg"
+              className="object-cover"
+              src="/images/headshot.jpg"
               alt="Aubrey standing in front of a band logo"
             />
           </div>
