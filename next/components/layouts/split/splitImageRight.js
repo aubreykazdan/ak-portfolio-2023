@@ -49,16 +49,24 @@ export default function SplitImageRight({}) {
               </figure>
             </div>
           </div>
-          <div className="mt-8 lg:mt-0 content-section">
+          <div className="mt-8 lg:mt-0">
             <div className="mx-auto lg:max-w-none">
               <p>
-                My name is Aubrey. With over a decade of service industry
-                experience under my belt, I have set my sights on using my
-                programming skills to help and support people + business in my
-                community.
+                My name is Aubrey. I am a highly skilled Software Developer with
+                expertise in constructing functional, responsive, and accessible
+                web applications.
+              </p>
+              <p className="mt-4">
+                My specialities include building dynamic, interactive web
+                applications that enhance the user experience and solve
+                real-world problems as these are the issues I am most passionate
+                about. Having experience working with designers and project
+                managers on projects that involve digital assets, I take
+                initiative on said projects through exceptional time management
+                and clear communication.
               </p>
             </div>
-            <div className="mx-auto mt-5 lg:col-start-1 lg:row-start-1 lg:max-w-none">
+            <div className="mx-auto mt-4 lg:col-start-1 lg:row-start-1 lg:max-w-none">
               <p>
                 Aside from programming, I have a distinct passion for everything
                 music. In my spare time, I collect and listen to vinyl. Having
@@ -66,29 +74,45 @@ export default function SplitImageRight({}) {
                 my own personal library that I share with my closest friends and
                 family.
               </p>
-              <p>
-                I also love a good story in the form of just about anything.
-                Live shows, movies and performances of all kinds are a driving
-                force for building lasting stories and memories.
+              <p className="mt-4">
+                Below is a list of my favourite records of 2023 so far...
               </p>
-              <p>Below is a list of my favourite records of the year 2022:</p>
-              <ul role="list">
-                <li>A Light For Attracting Attention - The Smile</li>
-                <li>Mirrorcell - Greg Puciato</li>
-                <li>Mr. Morale & The Big Steppers - Kendrick Lamar</li>
+              <ul className="mt-2 space-y-1" role="list">
+                <li>
+                  Live at Bush Hall - <strong>Black Country, New Road</strong>
+                </li>
+                <li>
+                  SCARING THE HOES -{" "}
+                  <strong>JPEGMAFIA &amp; Danny Brown</strong>
+                </li>
+                <li>
+                  Shook - <strong>Algiers</strong>
+                </li>
               </ul>
-              <h3>Continuing Practice</h3>
-              <p>
-                I have been practicing code since the middle of 2020. After a
-                career pivot from Customer Service to Front-End Web Development,
-                I continue to believe in using my skills for the betterment of
-                my community.
-              </p>
-              <p>
-                If you are hiring, or simply want to collaborate on a project of
-                any kind, I am reachable via{" "}
-                <a href="mailto:aubrey.j.kazdan@gmail.com">email</a>. Thank you.
-              </p>
+              <div className="mt-8">
+                <h3>Continuing Practice</h3>
+                <p className="mt-4">
+                  I have been practicing code since the middle of 2020. After a
+                  career pivot from Customer Service to Front-End Web
+                  Development, I continue to believe in using my skills for the
+                  betterment of my community.
+                </p>
+                <p className="mt-4">
+                  <strong>Currently Learning:</strong> TypeScript, Wordpress,
+                  SQL
+                </p>
+                <p className="mt-4">
+                  If you are hiring, or simply want to collaborate on a project
+                  of any kind, I am reachable via{" "}
+                  <a
+                    className="underline text-accent-blue"
+                    href="mailto:aubrey.j.kazdan@gmail.com"
+                  >
+                    email
+                  </a>
+                  . Thank you.
+                </p>
+              </div>
             </div>
           </div>
         </div>
