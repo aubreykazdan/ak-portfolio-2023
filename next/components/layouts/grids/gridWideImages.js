@@ -33,7 +33,7 @@ export default function GridWideImages({ data }) {
                   <div className="mt-2 text-base text-gray-600">
                     <SanityBlockContent blocks={item.description} />
                   </div>
-                  <div className="sm:flex space-x-4 mt-4">
+                  <div className="sm:flex sm:space-x-4 mt-4">
                     {item.liveUrl && (
                       <a className="btn btn-accent-light" href={item.liveUrl}>
                         Live
@@ -41,7 +41,10 @@ export default function GridWideImages({ data }) {
                       </a>
                     )}
                     {item.githubUrl && (
-                      <a className="btn btn-accent-light" href={item.githubUrl}>
+                      <a
+                        className="btn btn-accent-light mt-2 sm:mt-0"
+                        href={item.githubUrl}
+                      >
                         GitHub
                         <ArrowTopRightOnSquareIcon className="ml-2 h-4" />
                       </a>
