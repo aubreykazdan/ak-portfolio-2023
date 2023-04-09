@@ -25,6 +25,14 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'createdAt',
+      title: 'Created at',
+      type: 'date',
+      options: {
+        dateFormat: 'YYYY-MM',
+      },
+    }),
+    defineField({
       name: 'mainImage',
       title: 'Main image',
       type: 'image',
@@ -55,19 +63,23 @@ export default defineType({
       type: 'url',
     }),
   ],
+  orderings: [
+    {
+      title: 'Created At, New',
+      name: 'createdAtDesc',
+      by: [{field: 'createdAt', direction: 'desc'}],
+    },
+    {
+      title: 'Created At, Old',
+      name: 'createdAtAsc',
+      by: [{field: 'createdAt', direction: 'asc'}],
+    },
+  ],
   preview: {
     select: {
       title: 'title',
-      featured: 'featured',
+      subtitle: 'createdAt',
       media: 'mainImage',
-    },
-    prepare(selection) {
-      const {title, featured, media} = selection
-      return {
-        title: title,
-        subtitle: `${featured === true ? 'Featured' : ''}`,
-        media: media,
-      }
     },
   },
 })
