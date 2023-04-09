@@ -37,13 +37,12 @@ const features = [
 ];
 
 export default function Projects({ allProjects, preview }) {
-  console.log(allProjects);
   return (
     <Layout page="Projects">
       <main>
         <SimpleBanner title="Projects" />
         <div className="py-8 sm:py-16 lg:py-20">
-          <GridWideImages data={features} />
+          <GridWideImages data={allProjects} />
         </div>
       </main>
     </Layout>
