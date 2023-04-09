@@ -42,3 +42,13 @@ export const postSlugQuery = `
   },
 }
 `;
+
+export const allProjectsQuery = `
+*[_type == "project"]  | order(_createdAt asc) {
+  ...,
+  mainImage{
+    ...,
+    asset->
+  },
+}
+`;
