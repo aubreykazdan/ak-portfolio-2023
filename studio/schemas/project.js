@@ -20,6 +20,11 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'skills',
+      title: 'Skills',
+      type: 'string',
+    }),
+    defineField({
       name: 'mainImage',
       title: 'Main image',
       type: 'image',

@@ -66,6 +66,18 @@ export async function getAllPosts(preview) {
   return getUniquePosts(results);
 }
 
+export async function getAllProjects(preview) {
+  const results = await getClient(preview)
+    .fetch(`*[_type == "project"]  | order(_createdAt asc) {
+      ...,
+      mainImage{
+        ...,
+        asset->
+      },
+    }`);
+  return results;
+}
+
 export async function getPost(slug, preview) {
   const curClient = getClient(preview);
   const [post] = await Promise.all([

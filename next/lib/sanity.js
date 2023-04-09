@@ -3,7 +3,7 @@ import { createClient, createPreviewSubscriptionHook } from "next-sanity";
 
 const config = {
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "nmc1iz26",
   useCdn:
     typeof document !== "undefined" && process.env.NODE_ENV === "production",
   apiVersion: "2022-03-13",

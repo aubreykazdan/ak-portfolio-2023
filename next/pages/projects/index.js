@@ -1,6 +1,7 @@
 import GridWideImages from "../../components/layouts/grids/gridWideImages";
 import SimpleBanner from "../../components/layouts/banners/simpleBanner";
 import Layout from "../../components/layouts/base/layout";
+import { getAllProjects } from "@/lib/api";
 
 const features = [
   {
@@ -35,7 +36,8 @@ const features = [
   },
 ];
 
-export default function Projects({}) {
+export default function Projects({ allProjects, preview }) {
+  console.log(allProjects);
   return (
     <Layout page="Projects">
       <main>
@@ -46,4 +48,12 @@ export default function Projects({}) {
       </main>
     </Layout>
   );
+}
+
+export async function getStaticProps({ preview = false }) {
+  const allProjects = await getAllProjects(preview);
+  return {
+    props: { allProjects, preview },
+    revalidate: 1,
+  };
 }
