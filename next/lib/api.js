@@ -68,7 +68,7 @@ export async function getAllPosts(preview) {
 
 export async function getAllProjects(preview) {
   const results = await getClient(preview)
-    .fetch(`*[_type == "project"]  | order(createdAt asc) {
+    .fetch(`*[_type == "project"]  | order(createdAt desc) {
       ...,
       mainImage{
         ...,
